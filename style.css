@@ -1,0 +1,595 @@
+
+/* Note: My layout is the same as in the assignment but I used the fluid responsive approach using viewport width 
+to make the website completely responsive, but the assignment only comes responsive at breakpoints, I realised this
+late during the assignment when most of the website had been built. So my layout matches the 
+assignment one but font-sizes may differ, I apologise for this */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* css for the header and navbar */
+
+header {
+    width: 75%;
+    margin: auto;
+}
+
+nav {
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left-content {
+    width: 200px;
+    height: 36px;
+    padding: 5px 0 0 5px;
+    border: 1px solid black;
+}
+
+input {
+    width: 162px;
+    border: 1px solid black;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
+input:focus {
+    outline: none;
+  }
+
+i{
+    font-size: 18px;
+}
+
+#right-content {
+    width: 30px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-content i {
+    font-size: 22px;
+}
+
+/* css for section1 of the website */
+
+#carousal {
+    width: 100%;
+    height: 43vw;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/a3b2093334df570b9d04a1df/cf.jpg");
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    width: 50%;
+    height: 70%;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#left-crs {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left h1 {
+    font-size: 5vw;
+}
+
+#left p {
+    font-size: 1.2vw;
+}
+
+#left p b {
+    text-decoration: underline;
+}
+
+#crs-btn {
+    width: 40%;
+    height: 3vw;
+    border: 1px solid black;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 2% 6%;
+    color: #3a7c9c;
+    background-color: white;
+}
+
+#right {
+    width: 50%;
+    height: 95%;
+}
+
+#right-img {
+    width: 100%;
+    height: 100%;
+}
+
+#right-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* css for section2 of the website */
+
+#about {
+    width: 80%;
+    height: 16vw;
+    margin: auto;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 22.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dash {
+    width: 2vw;
+    height: 0.4vw;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.card h2 {
+    font-size: 1.7vw;
+}
+
+.card p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    color: grey;
+}
+
+/* css for section3 of the website */
+
+#article {
+    width: 85%;
+    height: 40vw;
+    margin: auto;
+    margin-top: 8vw;
+    display: flex;
+}
+
+#left-art {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+#hidden-img {
+    z-index: -1;
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("tiles.png");
+}
+
+#overlay-img {
+    width: 92%;
+    height: 90%;
+}
+
+
+#overlay-img img {
+    width: 100%;
+    height: 100%;
+} 
+
+#right-art {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-art-content {
+    width: 90%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#right-art-content #head h1 {
+    font-size: 3.5vw;
+}
+
+#right-art-content #head p {
+    font-size: 2.5vw;
+    color: grey;
+}
+
+#right-art-content #content #one {
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+
+#right-art-content #reference #two {
+    font-size: 1.2vw;
+}
+
+#right-art-content #reference #two b {
+    color: #3a7c9c;
+}
+
+#right-art-content #button {
+    width: 50%;
+    height: 3vw;
+    border: 1px solid black;
+    font-size: 1.2vw;
+    padding: 2.5% 10%;
+    color: white;
+    background-color: #3a7c9c;
+}
+
+/* css for section4 and 6 of the website */
+
+.four {
+    width: 100%;
+    height: 33vw;
+    margin-top: 5vw;
+    background-color: #3abed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four .container {
+    width: 85%;
+    height: 85%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.para-one {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.para-two {
+    font-size: 8vw;
+    font-weight: 600;
+}
+
+.para-three {
+    width: 70%;
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
+.container .btn {
+    width: 15%;
+    height: 3vw;
+    font-size: 1.2vw;
+    border: 1px solid white;
+    padding: 1% 2%;
+    color: white;
+}
+
+/* css for section5 of the website */
+
+#article-two {
+    width: 80%;
+    height: 40vw;
+    margin: auto;
+    margin-top: 5vw;
+    display: flex;
+}
+
+#left-two {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#hidden-two {
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("tiles.png");
+}
+
+#overlay-two {
+    width: 92%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#overlay-two img {
+    width: 100%;
+    height: 100%;
+} 
+
+#right-two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-container {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#head-one p {
+    font-size: 3vw;
+}
+
+#content-one p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
+#reference-one p {
+    font-size: 1.2vw;
+}
+
+#reference-one b {
+    font-weight: 200;
+    color: #3a7c9c;
+}
+
+#btn-one {
+    font-size: 1.2vw;
+    width: 40%;
+    height: 3.5vw;
+    border: 1px solid black;
+    padding: 3% 6%;
+    color: grey;
+}
+
+/* css for section7 of the website */
+
+#seven {
+    width: 100%;
+    height: 45vw;
+}
+
+#container-sev {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 33.33%;
+    height: 50%;
+}
+
+#pic1 {
+    background-image: url("woman-cofee.jpg");
+    background-size: cover;
+}
+
+#pic2 {
+    background-image: url("woman-chat.jpg");
+    background-size: cover;
+}
+
+#pic3 {
+    background-image: url("family-home.jpg");
+    background-size: cover;
+}
+
+#pic4 {
+    background-image: url("fg.jpg");
+    background-size: cover;
+}
+
+#pic5 {
+    background-image: url("home-lifestyle.jpg");
+    background-size: cover;
+}
+
+#pic6 {
+    background-image: url("elder-woman.jpg");
+    background-size: cover;
+} 
+
+/* css for section8 of the website */
+
+#eight {
+    width: 100%;
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-eight {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content-left {
+    width: 30%;
+    height: 95%;
+}
+
+#content-left #inner {
+    width: 80%;
+    height: 100%;
+}
+
+#content-left #inner p {
+    font-size: 3.2vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content-mid {
+    width: 30%;
+    height: 95%;
+}
+
+#content-mid p {
+    font-size: 1.2vw;
+    line-height: 1.3;
+}
+
+#content-right {
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#content-right p {
+    font-size: 1.2vw;
+    line-height: 1.3;
+}
+
+#content-right #buton {
+    font-size: 1.2vw;
+    width: 50%;
+    height: 3.5vw;
+    border: 1px solid black;
+    padding: 4% 6%;
+    color: grey;
+}
+
+/* css for section9 of the website */
+
+#nine {
+    width: 100%;
+    height: 40vw;
+    background-color: #3abed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-nine {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    color: white;
+}
+
+#left-nine {
+    width: 40%;
+    height: 100%;
+}
+
+#left-nine p {
+    font-size: 1.5vw;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+#right-nine {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#inner-contain {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact #head {
+    font-size: 6vw;
+    font-weight: 600;
+}
+
+.social {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    display: inline;
+    color: white;
+}
+
+.social i {
+    font-size: 2vw;
+}
+
+#phone p {
+    font-size: 2.5vw;
+}
+
+#social-two {
+    width: 30%;
+}
+
+/* css for Footer of the website */
+
+footer {
+    width: 100%;
+    height: 6vw;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot-container {
+    width: 20%;
+    font-size: 1.2vw;
+}
+
+#foot-container a {
+    color: #3a7c9c;
+    display: inline;
+    text-decoration: underline;
+}
+
+
+#foot-container span {
+    color: white;
+}
+
